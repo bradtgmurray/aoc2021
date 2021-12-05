@@ -36,3 +36,25 @@ func TestPart1Example(t *testing.T) {
 		t.Errorf("It failed %v", part1)
 	}
 }
+
+func TestPart2Example(t *testing.T) {
+	input := []string{
+		"00100",
+		"11110",
+		"10110",
+		"10111",
+		"10101",
+		"01111",
+		"00111",
+		"11100",
+		"10000",
+		"11001",
+		"00010",
+		"01010",
+	}
+
+	part2 := Part2(input)
+	if part2 != 230 {
+		t.Errorf("It failed %v", part2)
+	}
+}
